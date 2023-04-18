@@ -1,0 +1,11 @@
+.row{
+    background-color:  #55636c;
+}
+footer{
+    color: aliceblue;
+    font-size: 16px;
+    font-style: oblique;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
