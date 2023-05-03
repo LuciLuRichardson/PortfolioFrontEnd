@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AcercaDeComponent } from "./components/acerca-de/acerca-de.component";
@@ -14,7 +13,9 @@ import { ProyectoComponent } from "./components/proyecto/proyecto.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component'
 
 
 @NgModule({
@@ -28,11 +29,14 @@ import { HttpClientModule } from '@angular/common/http'
         ExperienciaComponent,
         HysComponent,
         ProyectoComponent,
-        FooterComponent
+        FooterComponent,
+        HomeComponent,
+        LoginComponent
     ],
 
     providers: [],
     bootstrap: [AppComponent],
+
     imports: [
         BrowserModule,
         AppRoutingModule,
