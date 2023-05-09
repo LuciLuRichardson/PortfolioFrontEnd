@@ -7,7 +7,8 @@
                 <a href="http://"><img src="../../../assets/linkedin.png" id="linkedin"></a>
                 <a href="http://"><img src="../../../assets/github.png" id="github"></a>
                 <a href="http://"><img src="../../../assets/twitter.png" id="twitter"></a>   
-                <button type="button" class="btn btn-light" (click)="login()">Login</button>      
+                <button type="button" class="btn btn-light" (click)="login()" *ngIf="!isLogged">Login</button> 
+                <button type="button" class="btn btn-light" (click)="onLogOut()" *ngIf="!isLogged">LOGOUT</button>     
         </div>
     </div>
 </div>
